@@ -1,0 +1,56 @@
+p label {
+    width: 120px;
+    float: left;
+    padding-left: 450px;
+}
+
+.star {
+    color: red;
+}
+
+label.error {
+    float: none;
+    color: red;
+    padding-left: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 35px;
+}
+
+#field {
+    height: 480px;
+    border-width: 10px;
+
+
+}
+
+.inpreg {
+    width: 250px;
+    height: 20px;
+    border-color: darkslategray;
+    font-size: 15px;
+}
+
+#courses {
+    width: 255px;
+    height: 28px;
+    border-color: darkslategray;
+}
+
+#regstudents {
+    text-align: center;
+}
+
+body {
+    background-image: url(../images/img3.jpg);
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#btnsub {
+    background-color: darkslategray;
+    color: whitesmoke;
+}

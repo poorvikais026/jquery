@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JQuery</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        $(function() {
+
+            size = 16;
+
+            $("#btn").click(function() {
+                $("#content").html("<h3>Welcome to JQuery..</h3>");
+            });
+
+            $("p").hover(function() {
+                $(this).css("background-color", "yellow");
+            });
+
+            $("p").mouseleave(function() {
+                $(this).css("background-color", "white");
+            });
+
+            $("#plus").click(function() {
+                $("body").css("font-size", size++);
+            });
+            $("#minus").click(function() {
+                $("body").css("font-size", size--);
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <button id="plus">+</button>
+
+    <button id="minus">-</button>
+    <hr/>
+
+    <button id="btn">Click!</button>
+    <div id="content"></div>
+    <div></div>
+
+    <p>Compressed and uncompressed copies of jQuery files are available. The uncompressed file is best used during development or debugging; the compressed file saves bandwidth and improves performance in production. You can also download a sourcemap file for use when debugging with a compressed file. The map file is not required for users to run jQuery.</p>
+
+    <p>Compressed and uncompressed copies of jQuery files are available. The uncompressed file is best used during development or debugging; the compressed file saves bandwidth and improves performance in production. You can also download a sourcemap file for use when debugging with a compressed file. The map file is not required for users to run jQuery.</p>
+
+</body>
+
+</html>
