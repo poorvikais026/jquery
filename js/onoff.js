@@ -1,6 +1,11 @@
 $(function () {
     var imgname = "";
     var flag = true;
+    var count = 3;
+    if (count == 0) {
+        $("img").attr("src", images / imgbst.jpg);
+
+    }
     $("#onoroff").click(function () {
         if (flag) {
             var imgname = "images/imgoff.jpg"
@@ -11,6 +16,8 @@ $(function () {
         }
 
         $("img").attr("src", imgname);
+
+
     });
 
     /*hide show example*/
