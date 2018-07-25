@@ -1,20 +1,24 @@
 $(function () {
-    var imgname = "";
+   
     var flag = true;
     var count = 3;
-    if (count == 0) {
-        $("img").attr("src", images / imgbst.jpg);
 
-    }
+
     $("#onoroff").click(function () {
-        if (flag) {
-            var imgname = "images/imgoff.jpg"
-            flag = false;
+        if (count == 0) {
+            var imgname = "images/imgbst.jpg";
         } else {
-            var imgname = "images/imgon.jpg"
-            flag = true;
-        }
 
+            if (flag) {
+                var imgname = "images/imgoff.jpg";
+                flag = false;
+                count--;
+            } else {
+                var imgname = "images/imgon.jpg";
+                flag = true;
+                count--;
+            }
+        }
         $("img").attr("src", imgname);
 
 
